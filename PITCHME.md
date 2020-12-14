@@ -8,7 +8,7 @@
 1. Nested classes & interfaces:
   + static,
   + non-static: inner.
-1. Random numbers
+1. Random numbers.
 1. Local to a method.
 1. Anonymous classes.
 1. Iterators.
@@ -36,7 +36,7 @@ A file can actually have more than one top level type.
   + `private` and `protected` don't make sense.
 1. At most one type can be public in a file, and the file name must match this type's name.
 
-@css[fragment](Avoid having more than one type in a file, except for small helper types.)
+@css[fragment](*Avoid having more than one type in a file, except for small helper types.*)
 
 
 
@@ -82,7 +82,7 @@ To approximate the answer, we will run many random tests, and take the average.
 
 ---
 @code[java code-max code-noblend](src/GridTest.java)
-@[1-13](To access `Point` from outside, we need the full name.)
+@[1-13](To access `Point` from outside, we need the full name: `Pointset.Point`.)
 @[15-21](Answer is about 6.2. The math is not trivial...)
 
 
@@ -253,7 +253,9 @@ public interface Func {
 
 
 ---
-## Iterators
+# Iterators
+
+---
 + Used for going over elements of a class.
 + A very elegant example of using inner classes.
 + Java has strong support for them.
